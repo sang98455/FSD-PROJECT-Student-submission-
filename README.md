@@ -1,23 +1,105 @@
-# Getting Started with Create React App
+# Student Project Submission Website
+
+A React-based web application for students to submit their projects with file uploads, featuring user authentication, project management, and data persistence.
+
+## 🚀 Features
+
+- **User Authentication**: Login/logout functionality
+- **Project Upload**: Submit projects with title and file attachment
+- **Project Management**: View all submitted projects with delete functionality
+- **Navigation**: Easy switching between upload and view sections
+- **Data Persistence**: Projects saved using localStorage
+- **Responsive Design**: Works on desktop and mobile devices
+- **Production Ready**: Optimized build for deployment
+
+## 🛠️ Technologies Used
+
+- **React 19.2.4** - Frontend framework
+- **React Hooks** - State management (useState, useEffect)
+- **localStorage** - Client-side data persistence
+- **CSS** - Styling with responsive design
+- **Create React App** - Build tooling
+
+## 📋 Available Scripts
+
+### `npm start`
+Runs the app in development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+### `npm run build`
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+### `npm test`
+Launches the test runner in interactive watch mode.
+
+## 🚀 Deployment
+
+This app is ready for deployment on Netlify!
+
+### Quick Deploy Steps:
+1. Run `npm run build` to create production files
+2. Go to [netlify.com](https://netlify.com) and sign up
+3. Drag the entire `build` folder to Netlify's deployment area
+4. Your site will be live in 1-2 minutes!
+
+For detailed deployment instructions, see: `NETLIFY_DEPLOYMENT_GUIDE.md`
+
+## 📱 Usage
+
+1. **Login**: Enter any username and password
+2. **Upload**: Add project title and select a file
+3. **View**: See all uploaded projects with delete option
+4. **Navigate**: Use the top navigation buttons
+5. **Logout**: Return to login screen
+
+## 📂 Project Structure
+
+```
+project-submission/
+├── public/
+│   ├── index.html
+│   ├── _redirects          # For Netlify routing
+│   └── assets...
+├── src/
+│   ├── App.js              # Main app component
+│   ├── App.css             # Global styles
+│   ├── pages/
+│   │   ├── Login.js        # Login component
+│   │   ├── Upload.js       # Upload component
+│   │   └── View.js         # View projects component
+│   └── index.js
+├── build/                  # Production build (after npm run build)
+└── package.json
+```
+
+## 🎯 Features in Detail
+
+- **Login System**: Simple authentication with username/password
+- **File Upload**: Supports any file type with validation
+- **Project List**: Displays title and filename for each project
+- **Delete Functionality**: Remove projects with confirmation
+- **Navigation Menu**: Switch between sections seamlessly
+- **Data Persistence**: Projects saved in browser's localStorage
+- **Mobile Responsive**: Optimized for all screen sizes
+
+## 🔧 Development
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-In the project directory, you can run:
+### Local Development
+1. Clone the repository
+2. Run `npm install`
+3. Run `npm start`
+4. Open [http://localhost:3000](http://localhost:3000)
 
-### `npm start`
+## 📄 License
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project is for educational purposes.
 
 ### `npm run build`
 
